@@ -3,6 +3,7 @@ import "./App.css";
 
 function App() {
   const [score, setScore] = useState(0);
+  const [started, setStarted] = useState(false);
   const [level, setLevel] = useState(1);
   const [time, setTime] = useState(30);
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -72,19 +73,26 @@ const restartGame = () => {
       <p>Level: {level}</p>
       <p>Highscore: {highscore}</p>
       <p>Tid igjen: {time} sek</p>
-      <button onClick={resetLevel}>Reset Level</button>
+    {!started && (
+      <button onClick={() => setStarted(true)}>Start Game</button>
+)}
 
 
       <div id="game-area">
-        {!gameOver && (
+        {started && !gameOver && (
+
           <div
             id="coin"
             onClick={handleClick}
             style={{
               left: position.x + "px",
               top: position.y + "px",
-              width: `${Math.max(20, 50 - score)}px`,
-              height: `${Math.max(20, 50 - score )}px`,
+              width: `${Math.max(20, 50 - score * 3)}px`,
+              height: `${Math.max(20, 50 - score * 3)}px`,
+                backgroundColor: `hsl(${level * 40}, 100%, 50%)`,
+
+
+
             }}
           ></div>
         )}
@@ -101,18 +109,3 @@ const restartGame = () => {
 }
 
 export default App;
-
-
-const [started, setStarted] = useState(false);
-
-{started && !gameOver && (
-
-
-
-backgroundColor: "red",
-
-{!started && (
-  <button onClick={() => setStarted(true)}>Start Game</button>
-)}
-
-  backgroundColor: `hsl(${level * 40}, 100%, 50%)`,
