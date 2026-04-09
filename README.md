@@ -1,5 +1,5 @@
 
-
+background-color: #111827;
 
 body {
     font-family: Arial, sans-serif;
