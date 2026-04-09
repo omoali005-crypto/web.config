@@ -103,8 +103,13 @@ const restartGame = () => {
 export default App;
 
 
+const [started, setStarted] = useState(false);
+
+{started && !gameOver && (
 
 
+{!started && (
+  <button onClick={() => setStarted(true)}>Start Game</button>
+)}
 
-width: `${Math.max(20, 50 - score * 3)}px`,
-height: `${Math.max(20, 50 - score * 3)}px`,
+  backgroundColor: `hsl(${level * 40}, 100%, 50%)`,
