@@ -26,3 +26,12 @@ style={{
   width: (50 - level * 3) + "px",
   height: (50 - level * 3) + "px",
 }}
+
+
+
+const resetLevel = () => {
+  setLevel(1);
+};
+
+<button onClick={resetLevel}>Reset Level</button>
+
