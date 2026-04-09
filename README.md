@@ -108,3 +108,40 @@ left: position.x + "px",
 top: position.y + "px",
 width: (50 - level * 3) + "px",
 height: (50 - level * 3) + "px",
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1e1e2f;
+    color: white;
+}
+
+#game-area {
+    background-color: #2c2c44;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+#coin {
+   
+    background-color: gold;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: gold;
+    cursor: pointer;
+}
+
+
