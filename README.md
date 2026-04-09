@@ -102,3 +102,9 @@ const restartGame = () => {
 }
 
 export default App;
+
+
+left: position.x + "px",
+top: position.y + "px",
+width: (50 - level * 3) + "px",
+height: (50 - level * 3) + "px",
