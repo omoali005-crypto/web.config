@@ -108,6 +108,9 @@ const [started, setStarted] = useState(false);
 {started && !gameOver && (
 
 
+
+backgroundColor: "red",
+
 {!started && (
   <button onClick={() => setStarted(true)}>Start Game</button>
 )}
