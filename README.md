@@ -1,4 +1,45 @@
-import { useState, useEffect } from "react";
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1c1ce7;
+    color: white;
+}
+
+#game-area {
+    width: 400px;
+    height: 400px;
+    background-color: #2c2c44;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+#coin {
+   
+    background-color: gold;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: gold;
+    cursor: pointer;
+}
+
+
+
+
+   import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
@@ -89,7 +130,7 @@ const restartGame = () => {
               top: position.y + "px",
               width: `${Math.max(20, 50 - score * 3)}px`,
               height: `${Math.max(20, 50 - score * 3)}px`,
-                backgroundColor: `hsl(${level * 40}, 100%, 50%)`,
+                backgroundColor: "red",
 
 
 
@@ -109,11 +150,3 @@ const restartGame = () => {
 }
 
 export default App;
-
-
-backgroundColor: `hsl(${(score * 30) % 360}, 100%, 50%)`,
-
-
-
-backgroundColor: "red",
-
