@@ -9,3 +9,6 @@ const restartGame = () => {
   moveCoin();
 };
 
+const resetLevel = () => {
+  setLevel(1);
+};
