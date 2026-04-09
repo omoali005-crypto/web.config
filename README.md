@@ -112,3 +112,8 @@ export default App;
 
 
 backgroundColor: `hsl(${(score * 30) % 360}, 100%, 50%)`,
+
+
+
+backgroundColor: "red",
+
