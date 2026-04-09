@@ -102,3 +102,9 @@ const restartGame = () => {
 
 export default App;
 
+
+
+
+
+width: `${Math.max(20, 50 - score * 3)}px`,
+height: `${Math.max(20, 50 - score * 3)}px`,
