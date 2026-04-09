@@ -144,4 +144,5 @@ button {
     cursor: pointer;
 }
 
-
+width: `${Math.max(30, 50 - level * 3)}px`,
+height: `${Math.max(30, 50 - level * 3)}px`,
