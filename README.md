@@ -16,3 +16,7 @@ if ((newScore) % 5 === 0) {
     height: 50 - level * 3,
   }}
 ></div>
+
+
+ width: Math.max(20, 50 - level * 3),
+height: Math.max(20, 50 - level * 3),
